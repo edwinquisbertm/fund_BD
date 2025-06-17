@@ -135,10 +135,10 @@ Registros múltiples de dos tablas están vinculados entre sí, típicamente med
 **Resumen:**  
 Reconocer cuándo implementar relaciones muchos a muchos evita estructuras ineficientes en bases de datos al centralizar conexiones complejas en una tabla intermedia.
 
-## Recursos 1
+### Recursos 1
 https://dbdiagram.io/
 
-
+## Apuntes 2
 select * from clients;
 
 update clients set client_id = 2 where client_id = 1;

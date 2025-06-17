@@ -35,7 +35,6 @@ CREATE TABLE if not exists bill_products (
 );
 
 
-
 insert into clients (name, email, phone_number) values
 ('John Doe', 'a@a.com', '1234567890');
 insert into products (name, slug, description) values
@@ -47,3 +46,13 @@ insert into bill_products (bill_id, product_id, quantity) values
 (5, 1, 2),
 (5, 2, 1);
 
+
+create table test (
+    test_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    qty INTEGER,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+alter table test 
+ add column price FLOAT;
